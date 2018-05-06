@@ -1,0 +1,330 @@
+object fm: Tfm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 591
+  ClientWidth = 422
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object tc: TTabControl
+    Align = Client
+    Size.Width = 422.000000000000000000
+    Size.Height = 591.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      422s
+      542s
+      422s
+      542s
+      422s
+      542s
+      422s
+      542s
+      422s
+      542s)
+    object tiMainMenu: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 78.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'MainMenu'
+      ExplicitSize.cx = 78.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object me: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Size.Width = 422.000000000000000000
+        Size.Height = 381.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 418.000000000000000000
+        Viewport.Height = 377.000000000000000000
+      end
+      object ToolBar1: TToolBar
+        Size.Width = 422.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object buInfo: TButton
+          Align = Right
+          ModalResult = 1
+          Position.X = 374.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          TabOrder = 1
+          Text = 'Info'
+        end
+      end
+      object buStartTest: TButton
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Top = 25.000000000000000000
+        Position.Y = 73.000000000000000000
+        Size.Width = 422.000000000000000000
+        Size.Height = 88.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = #1087#1086#1080#1089#1082
+        TextSettings.Font.Size = 21.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColorForState.Focused = claSlateblue
+      end
+    end
+    object tiTestWrap: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 71.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TestWrap'
+      ExplicitSize.cx = 71.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 422.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object buMain: TButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          TabOrder = 3
+        end
+        object Button4: TButton
+          Align = Right
+          Position.X = 374.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          TabOrder = 4
+          Text = 'Button4'
+        end
+        object buBackFirstQ: TButton
+          Align = Left
+          Position.X = 96.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'rewindtoolbutton'
+          TabOrder = 2
+        end
+        object buBackOneQ: TButton
+          Align = Left
+          Position.X = 48.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          TabOrder = 1
+        end
+      end
+      object ScrollBox1: TScrollBox
+        Align = Client
+        Size.Width = 422.000000000000000000
+        Size.Height = 398.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 422.000000000000000000
+        Viewport.Height = 398.000000000000000000
+      end
+      object Text1: TText
+        Align = Top
+        Padding.Left = 20.000000000000000000
+        Padding.Top = 20.000000000000000000
+        Padding.Right = 20.000000000000000000
+        Padding.Bottom = 20.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 422.000000000000000000
+        Size.Height = 96.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object tiSendQuestion: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 95.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'SendQuestion'
+      ExplicitSize.cx = 95.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Text2: TText
+        Align = Top
+        Padding.Left = 20.000000000000000000
+        Padding.Top = 20.000000000000000000
+        Padding.Right = 20.000000000000000000
+        Padding.Bottom = 20.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 422.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object buSendQuest: TButton
+        Align = Center
+        StyledSettings = [Family]
+        Size.Width = 241.000000000000000000
+        Size.Height = 192.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = #1055#1086#1083#1091#1095#1080#1090#1100' '#1089#1086#1074#1077#1090#1099
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {04070000000200000004000000}
+      end
+      object ToolBar3: TToolBar
+        Size.Width = 422.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object buMainM: TButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          TabOrder = 3
+        end
+        object Button9: TButton
+          Align = Right
+          Position.X = 374.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          TabOrder = 4
+          Text = 'Button4'
+        end
+        object buBackCurQ: TButton
+          Align = Left
+          Position.X = 48.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          TabOrder = 1
+        end
+        object buBackFirstqu: TButton
+          Align = Left
+          Position.X = 96.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'rewindtoolbutton'
+          TabOrder = 2
+        end
+      end
+    end
+    object tiResive: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 54.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Resive'
+      ExplicitSize.cx = 54.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ToolBar4: TToolBar
+        Size.Width = 422.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Button12: TButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          TabOrder = 3
+          Text = 'Button3'
+        end
+        object Button13: TButton
+          Align = Right
+          Position.X = 374.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          TabOrder = 4
+          Text = 'Button4'
+        end
+        object Button14: TButton
+          Align = Left
+          Position.X = 96.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'rewindtoolbutton'
+          TabOrder = 2
+          Text = 'Button3'
+        end
+        object Button15: TButton
+          Align = Left
+          Position.X = 48.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          TabOrder = 1
+          Text = 'Button3'
+        end
+      end
+      object ScrollBox2: TScrollBox
+        Align = Client
+        Size.Width = 422.000000000000000000
+        Size.Height = 494.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Viewport.Width = 422.000000000000000000
+        Viewport.Height = 494.000000000000000000
+      end
+    end
+    object tiChangeDB: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 76.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ChangeDB'
+      ExplicitSize.cx = 76.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ToolBar5: TToolBar
+        Size.Width = 422.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+end
