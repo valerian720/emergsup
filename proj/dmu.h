@@ -30,8 +30,8 @@ class Tdm : public TDataModule
 __published:	// IDE-managed Components
 	TFDPhysFBDriverLink *FBdriver;
 	TFDConnection *FDConnection;
-	TFDQuery *QgetQuestion;
-	TFDQuery *QgetAnswers;
+	TFDStoredProc *spGetFaceTest;
+	TFDStoredProc *spGetAnswers;
 private:	// User declarations
 public:		// User declarations
 	__fastcall Tdm(TComponent* Owner);

@@ -3,25 +3,27 @@ object dm: Tdm
   Height = 283
   Width = 451
   object FBdriver: TFDPhysFBDriverLink
-    Left = 400
-    Top = 24
+    Left = 392
+    Top = 16
   end
   object FDConnection: TFDConnection
     Params.Strings = (
-      'DriverID=FB'
       'User_Name=sysdba'
-      'Password=masterkey')
+      'Password=masterkey'
+      'Database=C:\Users\VD\Documents\emergsup\proj\DB\DB.FDB'
+      'DriverID=FB')
+    Connected = True
     Left = 216
     Top = 72
   end
-  object QgetQuestion: TFDQuery
+  object spGetFaceTest: TFDStoredProc
     Connection = FDConnection
-    Left = 112
+    Left = 96
     Top = 192
   end
-  object QgetAnswers: TFDQuery
+  object spGetAnswers: TFDStoredProc
     Connection = FDConnection
-    Left = 296
+    Left = 240
     Top = 200
   end
 end
