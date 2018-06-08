@@ -30,8 +30,33 @@ class Tdm : public TDataModule
 __published:	// IDE-managed Components
 	TFDPhysFBDriverLink *FBdriver;
 	TFDConnection *FDConnection;
-	TFDStoredProc *spGetFaceTest;
-	TFDStoredProc *spGetAnswers;
+	TFDTable *FDTableMaster;
+	TFDTable *FDTableFull;
+	TFDTable *FDTableSub;
+	TWideStringField *FDTableMasterTEST;
+	TWideStringField *FDTableMasterDESCRIBTION;
+	TWideStringField *FDTableMasterIDPREV;
+	TWideStringField *FDTableMasterIDTE;
+	TWideStringField *FDTableMasterSYSDESCRIB;
+	TWideStringField *FDTableSubTEST;
+	TWideStringField *FDTableSubDESCRIBTION;
+	TWideStringField *FDTableSubIDPREV;
+	TWideStringField *FDTableSubIDTE;
+	TWideStringField *FDTableSubSYSDESCRIB;
+	TWideStringField *FDTableFullIDFA;
+	TWideStringField *FDTableFullANSVER;
+	TWideStringField *FDTableFullIDQUESTION;
+	TFDTable *FDTabTestsCh;
+	TWideStringField *WideStringField1;
+	TWideStringField *WideStringField2;
+	TWideStringField *WideStringField3;
+	TWideStringField *WideStringField4;
+	TWideStringField *WideStringField5;
+	TFDTable *FDTableAnsvCh;
+	TWideStringField *WideStringField6;
+	TWideStringField *WideStringField7;
+	TWideStringField *WideStringField8;
+	void __fastcall DataModuleCreate(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall Tdm(TComponent* Owner);

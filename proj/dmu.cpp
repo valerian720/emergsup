@@ -15,3 +15,9 @@ __fastcall Tdm::Tdm(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall Tdm::DataModuleCreate(TObject *Sender)
+{
+    FDConnection->Open();
+}
+//---------------------------------------------------------------------------
+

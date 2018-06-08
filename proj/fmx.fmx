@@ -3,64 +3,54 @@ object fm: Tfm
   Top = 0
   Caption = 'Form1'
   ClientHeight = 591
-  ClientWidth = 422
+  ClientWidth = 841
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object tc: TTabControl
     Align = Client
-    Size.Width = 422.000000000000000000
+    Size.Width = 841.000000000000000000
     Size.Height = 591.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 4
+    TabIndex = 2
     TabOrder = 1
-    TabPosition = PlatformDefault
+    TabPosition = None
     Sizes = (
-      422s
-      542s
-      422s
-      542s
-      422s
-      542s
-      422s
-      542s
-      422s
-      542s)
+      841s
+      591s
+      841s
+      591s
+      841s
+      591s
+      841s
+      591s
+      841s
+      591s)
     object tiMainMenu: TTabItem
       CustomIcon = <
         item
         end>
       IsSelected = False
-      Size.Width = 78.000000000000000000
-      Size.Height = 49.000000000000000000
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
       Text = 'MainMenu'
       ExplicitSize.cx = 78.000000000000000000
       ExplicitSize.cy = 26.000000000000000000
-      object me: TMemo
-        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
-        DataDetectorTypes = []
-        Align = Client
-        Size.Width = 422.000000000000000000
-        Size.Height = 381.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 0
-        Viewport.Width = 418.000000000000000000
-        Viewport.Height = 377.000000000000000000
-      end
       object ToolBar1: TToolBar
-        Size.Width = 422.000000000000000000
+        Size.Width = 841.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 1
+        TabOrder = 0
         object buInfo: TButton
           Align = Right
           ModalResult = 1
-          Position.X = 374.000000000000000000
+          Position.X = 793.000000000000000000
           Size.Width = 48.000000000000000000
           Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
@@ -68,20 +58,44 @@ object fm: Tfm
           TabOrder = 1
           Text = 'Info'
         end
+        object buChange: TButton
+          Align = Left
+          Size.Width = 113.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = #1080#1079#1084#1077#1085#1077#1085#1080#1077' '#1073#1072#1079#1099
+          OnClick = buChangeClick
+        end
       end
       object buStartTest: TButton
         Align = Top
         StyledSettings = [Family]
         Margins.Top = 25.000000000000000000
         Position.Y = 73.000000000000000000
-        Size.Width = 422.000000000000000000
-        Size.Height = 88.000000000000000000
+        Size.Width = 841.000000000000000000
+        Size.Height = 168.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 2
+        TabOrder = 1
         Text = #1087#1086#1080#1089#1082
         TextSettings.Font.Size = 21.000000000000000000
         TextSettings.Font.StyleExt = {00070000000000000004000000}
         TextSettings.FontColorForState.Focused = claSlateblue
+        OnClick = buStartTestClick
+      end
+      object Label1: TLabel
+        Align = Client
+        StyledSettings = [Family, Style]
+        Size.Width = 841.000000000000000000
+        Size.Height = 350.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.FontColor = claBlue
+        TextSettings.HorzAlign = Center
+        Text = 
+          #1076#1083#1103' '#1090#1086#1075#1086' '#1095#1090#1086' '#1073#1099' '#1085#1072#1081#1090#1080' '#1085#1077#1086#1073#1093#1086#1076#1080#1084#1091#1102' '#1080#1085#1092#1086#1088#1084#1072#1094#1080#1102' '#1074' '#1090#1077#1082#1091#1097#1077#1081' '#1089#1080#1090#1091#1072#1094#1080#1080' ' +
+          #1085#1072#1078#1084#1080#1090#1077' "'#1087#1086#1080#1089#1082'"'
+        TabOrder = 2
       end
     end
     object tiTestWrap: TTabItem
@@ -89,8 +103,8 @@ object fm: Tfm
         item
         end>
       IsSelected = False
-      Size.Width = 71.000000000000000000
-      Size.Height = 49.000000000000000000
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
@@ -98,7 +112,7 @@ object fm: Tfm
       ExplicitSize.cx = 71.000000000000000000
       ExplicitSize.cy = 26.000000000000000000
       object ToolBar2: TToolBar
-        Size.Width = 422.000000000000000000
+        Size.Width = 841.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -109,10 +123,11 @@ object fm: Tfm
           Size.PlatformDefault = False
           StyleLookup = 'escapetoolbutton'
           TabOrder = 3
+          OnClick = buMainClick
         end
         object Button4: TButton
           Align = Right
-          Position.X = 374.000000000000000000
+          Position.X = 793.000000000000000000
           Size.Width = 48.000000000000000000
           Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
@@ -128,6 +143,7 @@ object fm: Tfm
           Size.PlatformDefault = False
           StyleLookup = 'rewindtoolbutton'
           TabOrder = 2
+          OnClick = buBackFirstQClick
         end
         object buBackOneQ: TButton
           Align = Left
@@ -138,15 +154,52 @@ object fm: Tfm
           StyleLookup = 'priortoolbutton'
           TabOrder = 1
         end
+        object buGoSendQ: TButton
+          Align = Right
+          Position.X = 720.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowrighttoolbutton'
+          TabOrder = 5
+          OnClick = buGoSendQClick
+        end
       end
       object ScrollBox1: TScrollBox
         Align = Client
-        Size.Width = 422.000000000000000000
-        Size.Height = 398.000000000000000000
+        Size.Width = 841.000000000000000000
+        Size.Height = 447.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Viewport.Width = 422.000000000000000000
-        Viewport.Height = 398.000000000000000000
+        Viewport.Width = 841.000000000000000000
+        Viewport.Height = 447.000000000000000000
+        object lbTestWrap: TListBox
+          Align = Client
+          Size.Width = 841.000000000000000000
+          Size.Height = 447.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          DisableFocusEffect = True
+          ItemHeight = 35.000000000000000000
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          OnChange = lbTestWrapChange
+          Viewport.Width = 837.000000000000000000
+          Viewport.Height = 443.000000000000000000
+        end
+        object lvTestWrap: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 841.000000000000000000
+          Size.Height = 447.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ItemAppearance.HeaderHeight = 35
+        end
       end
       object Text1: TText
         Align = Top
@@ -155,18 +208,20 @@ object fm: Tfm
         Padding.Right = 20.000000000000000000
         Padding.Bottom = 20.000000000000000000
         Position.Y = 48.000000000000000000
-        Size.Width = 422.000000000000000000
+        Size.Width = 841.000000000000000000
         Size.Height = 96.000000000000000000
         Size.PlatformDefault = False
+        Text = #1089' '#1095#1077#1084' '#1089#1074#1103#1079#1072#1085#1072' '#1087#1088#1086#1073#1083#1077#1084#1072
+        TextSettings.Font.Size = 20.000000000000000000
       end
     end
     object tiSendQuestion: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = False
-      Size.Width = 95.000000000000000000
-      Size.Height = 49.000000000000000000
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
@@ -180,9 +235,10 @@ object fm: Tfm
         Padding.Right = 20.000000000000000000
         Padding.Bottom = 20.000000000000000000
         Position.Y = 48.000000000000000000
-        Size.Width = 422.000000000000000000
+        Size.Width = 841.000000000000000000
         Size.Height = 97.000000000000000000
         Size.PlatformDefault = False
+        Text = '-'
       end
       object buSendQuest: TButton
         Align = Center
@@ -194,9 +250,10 @@ object fm: Tfm
         Text = #1055#1086#1083#1091#1095#1080#1090#1100' '#1089#1086#1074#1077#1090#1099
         TextSettings.Font.Size = 20.000000000000000000
         TextSettings.Font.StyleExt = {04070000000200000004000000}
+        OnClick = buSendQuestClick
       end
       object ToolBar3: TToolBar
-        Size.Width = 422.000000000000000000
+        Size.Width = 841.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -207,10 +264,11 @@ object fm: Tfm
           Size.PlatformDefault = False
           StyleLookup = 'escapetoolbutton'
           TabOrder = 3
+          OnClick = buMainMClick
         end
         object Button9: TButton
           Align = Right
-          Position.X = 374.000000000000000000
+          Position.X = 793.000000000000000000
           Size.Width = 48.000000000000000000
           Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
@@ -226,6 +284,7 @@ object fm: Tfm
           Size.PlatformDefault = False
           StyleLookup = 'priortoolbutton'
           TabOrder = 1
+          OnClick = buBackCurQClick
         end
         object buBackFirstqu: TButton
           Align = Left
@@ -243,8 +302,8 @@ object fm: Tfm
         item
         end>
       IsSelected = False
-      Size.Width = 54.000000000000000000
-      Size.Height = 49.000000000000000000
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
@@ -252,7 +311,7 @@ object fm: Tfm
       ExplicitSize.cx = 54.000000000000000000
       ExplicitSize.cy = 26.000000000000000000
       object ToolBar4: TToolBar
-        Size.Width = 422.000000000000000000
+        Size.Width = 841.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -264,10 +323,11 @@ object fm: Tfm
           StyleLookup = 'escapetoolbutton'
           TabOrder = 3
           Text = 'Button3'
+          OnClick = Button12Click
         end
         object Button13: TButton
           Align = Right
-          Position.X = 374.000000000000000000
+          Position.X = 793.000000000000000000
           Size.Width = 48.000000000000000000
           Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
@@ -284,6 +344,7 @@ object fm: Tfm
           StyleLookup = 'rewindtoolbutton'
           TabOrder = 2
           Text = 'Button3'
+          OnClick = Button14Click
         end
         object Button15: TButton
           Align = Left
@@ -294,25 +355,45 @@ object fm: Tfm
           StyleLookup = 'priortoolbutton'
           TabOrder = 1
           Text = 'Button3'
+          OnClick = Button15Click
         end
       end
       object ScrollBox2: TScrollBox
         Align = Client
-        Size.Width = 422.000000000000000000
-        Size.Height = 494.000000000000000000
+        Size.Width = 841.000000000000000000
+        Size.Height = 543.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
-        Viewport.Width = 422.000000000000000000
-        Viewport.Height = 494.000000000000000000
+        Viewport.Width = 841.000000000000000000
+        Viewport.Height = 543.000000000000000000
+        object lbResive: TListBox
+          Align = Client
+          Size.Width = 841.000000000000000000
+          Size.Height = 543.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          DisableFocusEffect = True
+          ItemIndex = 0
+          ItemHeight = 35.000000000000000000
+          Items.Strings = (
+            #1086#1075#1086#1085#1100' '#1085#1091#1078#1085#1086' '#1083#1080#1096#1080#1090#1100' '#1087#1088#1080#1090#1086#1082#1072' '#1074#1086#1079#1076#1091#1093#1072
+            #1086#1075#1086#1085#1100' '#1084#1086#1078#1085#1086' '#1083#1080#1096#1080#1090#1100' '#1076#1086#1089#1090#1091#1087#1072' '#1082' '#1074#1086#1079#1076#1091#1093#1091' '#1087#1088#1080' '#1087#1086#1084#1086#1097#1080' '#1090#1103#1078#1105#1083#1086#1081' '#1090#1082#1072#1085#1080
+            #1087#1088#1080' '#1079#1072#1076#1099#1084#1083#1077#1085#1080#1080' '#1085#1091#1078#1085#1086' '#1087#1088#1080#1083#1086#1078#1080#1090#1100' '#1084#1086#1082#1088#1091#1102' '#1090#1088#1103#1087#1082#1091' '#1082' '#1083#1080#1094#1091)
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 837.000000000000000000
+          Viewport.Height = 539.000000000000000000
+        end
       end
     end
     object tiChangeDB: TTabItem
       CustomIcon = <
         item
         end>
-      IsSelected = True
-      Size.Width = 76.000000000000000000
-      Size.Height = 49.000000000000000000
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
       TabOrder = 0
@@ -320,11 +401,178 @@ object fm: Tfm
       ExplicitSize.cx = 76.000000000000000000
       ExplicitSize.cy = 26.000000000000000000
       object ToolBar5: TToolBar
-        Size.Width = 422.000000000000000000
+        Size.Width = 841.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
+        object Button2: TButton
+          Align = Left
+          Size.Width = 145.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'escapetoolbutton'
+          TabOrder = 1
+          OnClick = buMainClick
+        end
+        object NavigatorBindSourceDB5: TBindNavigator
+          Position.X = 600.000000000000000000
+          Position.Y = 23.000000000000000000
+          Size.Width = 241.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          DataSource = BindSourceDB5
+          xRadius = 4.000000000000000000
+          yRadius = 4.000000000000000000
+        end
+        object NavigatorBindSourceDB4: TBindNavigator
+          Position.X = 200.000000000000000000
+          Position.Y = 23.000000000000000000
+          Size.Width = 241.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          DataSource = BindSourceDB4
+          xRadius = 4.000000000000000000
+          yRadius = 4.000000000000000000
+        end
+      end
+      object GridPanelLayout1: TGridPanelLayout
+        Align = Client
+        Size.Width = 841.000000000000000000
+        Size.Height = 543.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = Grid1
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = Grid2
+            Row = 1
+          end>
+        ExpandStyle = FixedSize
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object Grid1: TGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Size.Width = 841.000000000000000000
+          Size.Height = 271.500000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          RowCount = 3
+          Viewport.Width = 837.000000000000000000
+          Viewport.Height = 246.500000000000000000
+        end
+        object Grid2: TGrid
+          Align = Client
+          CanFocus = True
+          ClipChildren = True
+          Size.Width = 841.000000000000000000
+          Size.Height = 271.500000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          RowCount = 6
+          Viewport.Width = 837.000000000000000000
+          Viewport.Height = 246.500000000000000000
+        end
       end
     end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dm.FDTableFull
+    ScopeMappings = <>
+    Left = 568
+    Top = 136
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 620
+    Top = 141
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'TEST'
+      Component = Text1
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'DESCRIBTION'
+      Component = Text2
+      ComponentProperty = 'Text'
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'ANSVER'
+      Control = lbResive
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkGridToDataSourceBindSourceDB4: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB4
+      GridControl = Grid1
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB5: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB5
+      GridControl = Grid2
+      Columns = <>
+    end
+    object LinkFillControlToField: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = lvTestWrap
+      Track = False
+      FillDataSource = BindSourceDB2
+      FillDisplayFieldName = 'DESCRIBTION'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = dm.FDTableMaster
+    ScopeMappings = <>
+    Left = 512
+    Top = 144
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = dm.FDTableSub
+    ScopeMappings = <>
+    Left = 456
+    Top = 136
+  end
+  object BindSourceDB4: TBindSourceDB
+    DataSet = dm.FDTableAnsvCh
+    ScopeMappings = <>
+    Left = 360
+    Top = 112
+  end
+  object BindSourceDB5: TBindSourceDB
+    DataSet = dm.FDTabTestsCh
+    ScopeMappings = <>
+    Left = 256
+    Top = 120
   end
 end
